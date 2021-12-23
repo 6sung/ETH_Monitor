@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BCE55C"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMemo"
+        android:layout_width="409dp"
+        android:layout_height="690dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+
+        />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerMemo"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BCE55C"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:background="#BCE55C"
+                android:gravity="center_horizontal"
+                android:text="거래소"
+                android:textColor="#050505"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:background="#BCE55C"
+                android:gravity="center_horizontal"
+                android:text="ETH 시세"
+                android:textColor="#050505"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:background="#BCE55C"
+                android:gravity="center_horizontal"
+                android:text="변동(%)"
+                android:textColor="#050505"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#BCE55C"
+                android:gravity="center_horizontal"
+                android:text="변동(krw)"
+                android:textColor="#050505"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/gopax"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:text="고팍스"
+                android:textColor="#050505"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textColor="#050505"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText2"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText3"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/bithumb"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:text="빗썸"
+                android:textColor="#050505"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText4"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textColor="#050505"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText5"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText6"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/upbit"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:text="업비트"
+                android:textColor="#050505"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText7"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textColor="#050505"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText8"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/editcoinText9"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center_horizontal"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

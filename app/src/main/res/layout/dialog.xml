@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="채굴기 이름"
+            android:textColor="#090909"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="채굴기 주소"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editAddress1"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:ems="10"
+            android:hint=" ip주소:port"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/hash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="평균 해쉬값"
+            android:textColor="#090909"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editAvgHash1"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow>
+
+
+
+    </TableRow>
+
+</TableLayout>
