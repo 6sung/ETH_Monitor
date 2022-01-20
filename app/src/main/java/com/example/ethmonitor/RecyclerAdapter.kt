@@ -20,6 +20,7 @@ class RecyclerAdapter(val roomMemoList:List<RoomMemo>) : RecyclerView.Adapter<Re
     }
     override fun getItemCount() = roomMemoList.size
     class Holder(val binding: ItemRecyclerBinding) : RecyclerView.ViewHolder(binding.root) {
+
         fun setMemo(roomMemo: RoomMemo) {
             with(binding) {
                 textID.text = roomMemo.dvvName
